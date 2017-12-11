@@ -1,0 +1,172 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react2 = require('react');
+
+var _react3 = _interopRequireDefault(_react2);
+
+var _index = require('./../../node_modules/react-transform-hmr/lib/index.js');
+
+var _index2 = _interopRequireDefault(_index);
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _class,
+    _temp,
+    _jsxFileName = '/home/premsagar/reactApps/reactCRNA1/timelineTwitter1/src/HomeScreen/Search.js';
+
+var _nativeBase = require('native-base');
+
+var _reactNative = require('react-native');
+
+var _FooterBottom = require('./FooterBottom');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _components = {
+  Search: {
+    displayName: 'Search'
+  }
+};
+
+var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+  filename: '/home/premsagar/reactApps/reactCRNA1/timelineTwitter1/src/HomeScreen/Search.js',
+  components: _components,
+  locals: [module],
+  imports: [_react3.default]
+});
+
+function _wrapComponent(id) {
+  return function (Component) {
+    return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+  };
+}
+
+var Search = _wrapComponent('Search')((_temp = _class = function (_Component) {
+  _inherits(Search, _Component);
+
+  function Search() {
+    _classCallCheck(this, Search);
+
+    return _possibleConstructorReturn(this, (Search.__proto__ || Object.getPrototypeOf(Search)).apply(this, arguments));
+  }
+
+  _createClass(Search, [{
+    key: 'render',
+    value: function render() {
+      return _react3.default.createElement(
+        _nativeBase.Container,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14
+          }
+        },
+        _react3.default.createElement(
+          _nativeBase.Content,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 15
+            }
+          },
+          _react3.default.createElement(
+            _nativeBase.Header,
+            { searchBar: true, rounded: true, style: { marginTop: _reactNative.StatusBar.currentHeight }, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 16
+              }
+            },
+            _react3.default.createElement(
+              _nativeBase.Item,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 17
+                }
+              },
+              _react3.default.createElement(_nativeBase.Icon, { name: 'ios-search', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 18
+                }
+              }),
+              _react3.default.createElement(_nativeBase.Input, { placeholder: 'Search Twitter', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 19
+                }
+              }),
+              _react3.default.createElement(_nativeBase.Icon, { name: 'ios-people', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 20
+                }
+              })
+            ),
+            _react3.default.createElement(
+              _nativeBase.Button,
+              { transparent: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 22
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 23
+                  }
+                },
+                'Search'
+              )
+            )
+          )
+        ),
+        _react3.default.createElement(
+          _nativeBase.Footer,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 27
+            }
+          },
+          _react3.default.createElement(
+            _nativeBase.Content,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 28
+              }
+            },
+            _react3.default.createElement(_FooterBottom.FooterBottom, {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 29
+              }
+            })
+          )
+        )
+      );
+    }
+  }]);
+
+  return Search;
+}(_react2.Component), _class.navigationOptions = {
+
+  tabBarIcon: function tabBarIcon(_ref) {
+    var tintColor = _ref.tintColor;
+    return _react3.default.createElement(_nativeBase.Icon, { name: 'md-search', style: { color: tintColor }, __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      }
+    });
+  }
+}, _temp));
+
+exports.default = Search;

@@ -1,0 +1,85 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.FooterBottom = undefined;
+var _jsxFileName = '/home/premsagar/reactApps/reactCRNA1/timelineTwitter1/src/HomeScreen/FooterBottom.js';
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _nativeBase = require('native-base');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var FooterBottom = function FooterBottom() {
+
+  return _react2.default.createElement(
+    _nativeBase.Footer,
+    { style: { backgroundColor: 'white' }, __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      }
+    },
+    _react2.default.createElement(
+      _nativeBase.FooterTab,
+      { style: { backgroundColor: 'white' }, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        }
+      },
+      _react2.default.createElement(
+        _nativeBase.Button,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 9
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Text,
+          { style: { fontSize: 8, color: 'blue', fontWeight: 'bold' }, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 10
+            }
+          },
+          'All'
+        )
+      ),
+      _react2.default.createElement(
+        _nativeBase.Button,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12
+          }
+        },
+        _react2.default.createElement(
+          _nativeBase.Text,
+          { style: { fontSize: 8, fontWeight: 'bold' }, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 13
+            }
+          },
+          'Mentions'
+        )
+      )
+    ),
+    _react2.default.createElement(
+      _nativeBase.Right,
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        }
+      },
+      _react2.default.createElement(_nativeBase.Icon, { style: { marginRight: 8, color: 'blue' }, name: 'settings', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        }
+      })
+    )
+  );
+};
+
+exports.FooterBottom = FooterBottom;

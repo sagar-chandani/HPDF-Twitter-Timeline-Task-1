@@ -1,0 +1,117 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react2 = require("react");
+
+var _react3 = _interopRequireDefault(_react2);
+
+var _index = require("./node_modules/react-transform-hmr/lib/index.js");
+
+var _index2 = _interopRequireDefault(_index);
+
+var _jsxFileName = "/home/premsagar/reactApps/reactCRNA1/timelineTwitter1/App.js";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _reactNative = require("react-native");
+
+var _nativeBase = require("native-base");
+
+var _expo = require("expo");
+
+var _expo2 = _interopRequireDefault(_expo);
+
+var _index3 = require("./src/HomeScreen/index.js");
+
+var _index4 = _interopRequireDefault(_index3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _components = {
+  AwesomeApp: {
+    displayName: "AwesomeApp"
+  }
+};
+
+var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+  filename: "/home/premsagar/reactApps/reactCRNA1/timelineTwitter1/App.js",
+  components: _components,
+  locals: [module],
+  imports: [_react3.default]
+});
+
+function _wrapComponent(id) {
+  return function (Component) {
+    return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+  };
+}
+
+var AwesomeApp = _wrapComponent("AwesomeApp")(function (_Component) {
+  _inherits(AwesomeApp, _Component);
+
+  function AwesomeApp() {
+    _classCallCheck(this, AwesomeApp);
+
+    var _this = _possibleConstructorReturn(this, (AwesomeApp.__proto__ || Object.getPrototypeOf(AwesomeApp)).call(this));
+
+    _this.state = {
+      isReady: false
+    };
+    return _this;
+  }
+
+  _createClass(AwesomeApp, [{
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      return regeneratorRuntime.async(function componentWillMount$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return regeneratorRuntime.awrap(_expo2.default.Font.loadAsync({
+                Roboto: require("./node_modules/@expo/vector-icons/fonts/Entypo.ttf"),
+                Roboto_medium: require("./node_modules/@expo/vector-icons/fonts/Feather.ttf"),
+                Ionicons: require("./node_modules/@expo/vector-icons/fonts/Ionicons.ttf")
+              }));
+
+            case 2:
+              this.setState({ isReady: true });
+
+            case 3:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, null, this);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (!this.state.isReady) {
+        return _react3.default.createElement(_expo2.default.AppLoading, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 24
+          }
+        });
+      }
+      return _react3.default.createElement(_index4.default, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        }
+      });
+    }
+  }]);
+
+  return AwesomeApp;
+}(_react2.Component));
+
+exports.default = AwesomeApp;

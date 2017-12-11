@@ -1,0 +1,29 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Profile = require("./Profile.js");
+
+var _Profile2 = _interopRequireDefault(_Profile);
+
+var _EditScreenOne = require("./EditScreenOne.js");
+
+var _EditScreenOne2 = _interopRequireDefault(_EditScreenOne);
+
+var _EditScreenTwo = require("./EditScreenTwo.js");
+
+var _EditScreenTwo2 = _interopRequireDefault(_EditScreenTwo);
+
+var _reactNavigation = require("react-navigation");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = DrawNav = (0, _reactNavigation.StackNavigator)({
+  Profile: { screen: _Profile2.default },
+  EditScreenOne: { screen: _EditScreenOne2.default },
+  EditScreenTwo: { screen: _EditScreenTwo2.default }
+});

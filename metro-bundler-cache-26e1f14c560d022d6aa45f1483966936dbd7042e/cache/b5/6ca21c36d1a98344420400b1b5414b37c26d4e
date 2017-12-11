@@ -1,0 +1,42 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _jsxFileName = "/home/premsagar/reactApps/reactCRNA1/timelineTwitter1/src/HomeScreen/index.js";
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _HomeScreen = require("./HomeScreen.js");
+
+var _HomeScreen2 = _interopRequireDefault(_HomeScreen);
+
+var _SideBar = require("../SideBar/SideBar.js");
+
+var _SideBar2 = _interopRequireDefault(_SideBar);
+
+var _Search = require("./Search.js");
+
+var _Search2 = _interopRequireDefault(_Search);
+
+var _reactNavigation = require("react-navigation");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var HomeScreenRouter = (0, _reactNavigation.DrawerNavigator)({
+  Home: { screen: _HomeScreen2.default },
+  Search: { screen: _Search2.default }
+}, {
+  contentComponent: function contentComponent(props) {
+    return _react2.default.createElement(_SideBar2.default, _extends({}, props, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      }
+    }));
+  }
+});
+exports.default = HomeScreenRouter;

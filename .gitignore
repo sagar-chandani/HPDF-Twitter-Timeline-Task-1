@@ -5,6 +5,8 @@
 
 # dependencies
 /node_modules
+/metro-bundler-cache-26e1f14c560d022d6aa45f1483966936dbd7042e
+/native-base-theme
 
 # misc
 .env.local

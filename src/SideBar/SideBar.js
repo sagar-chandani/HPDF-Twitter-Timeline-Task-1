@@ -30,7 +30,7 @@ export default class SideBar extends React.Component {
             }}
           />
           <Text style={{color: 'black', fontWeight: 'bold',fontSize: 20}}>
-           Sagar Chandani
+          Sagar Chandani
          </Text>
          <Text style={{color: 'black'}}>
           @spc1194

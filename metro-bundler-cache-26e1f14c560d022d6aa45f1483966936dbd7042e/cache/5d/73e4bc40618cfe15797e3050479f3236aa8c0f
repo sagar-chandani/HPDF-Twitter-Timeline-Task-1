@@ -102,7 +102,7 @@ var SideBar = _wrapComponent("SideBar")(function (_React$Component) {
                 lineNumber: 32
               }
             },
-            "Sagar Chandani"
+            "Suchitra Pandita"
           ),
           _react3.default.createElement(
             _nativeBase.Text,
@@ -111,7 +111,7 @@ var SideBar = _wrapComponent("SideBar")(function (_React$Component) {
                 lineNumber: 35
               }
             },
-            "@spc1194"
+            "@suchip"
           ),
           _react3.default.createElement(
             _nativeBase.Text,
